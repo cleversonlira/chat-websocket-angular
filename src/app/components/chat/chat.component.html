@@ -1,0 +1,13 @@
+<main>
+  <section>
+    <h1> Chat </h1>
+    <div class="panel">
+      <fieldset>
+        <textarea cols="70" rows="10" id="mensagens" readonly>{{ historico }}</textarea>
+      </fieldset>
+      <input type="text" [(ngModel)]="objetoDeEnvio.user" placeholder="Nome"/>
+      <input type="text" placeholder="Digite a mensagem" (keydown.enter) = "enviaMensagem()" [(ngModel)]="objetoDeEnvio.message"/>
+      <input id="send" class="button" type="submit" value="Enviar" (click) ="enviaMensagem()" />
+    </div>
+  </section>
+</main>

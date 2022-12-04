@@ -1,0 +1,72 @@
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #385858;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding-top: 100px;
+  padding: 10px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 35px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 2px;
+}
+
+#messageInput {
+  display: inline-block;
+  width: 500px;
+}
+
+#send {
+  display: inline-block;
+  width: 124px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+#send:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+#send:active {
+  background-color: darkgreen;
+}
+
+
+@media screen and (max-width: 720px) {
+  session {
+    max-height: 90%;
+    padding: 10px;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  fieldset textarea {
+    display: inline-block;
+    width: 100%;
+  }
+
+  input {
+    margin-top: 5px;
+  }
+
+  #send {
+    width: 100%;
+  }
+}
